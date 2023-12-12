@@ -22,6 +22,7 @@ nav {
       margin: 0 2rem;
       color: $dark;
       transition: color 0.3s;
+      text-decoration: none;
 
       &:hover {
         color: $lightdark;

@@ -14,7 +14,6 @@ import Profile from "./components/profile/Profile";
 import OrderDetails from "./components/myOrders/OrderDetails";
 import About from "./components/about/About";
 
-
 import "./styles/app.scss";
 import "./styles/header.scss";
 import "./styles/home.scss";
@@ -30,32 +29,23 @@ import "./styles/table.scss";
 import "./styles/orderDetails.scss";
 import "./styles/about.scss";
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <Header isAuthenticated={true} />
+      <Header isAuthenticated="true" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-          //           Add the Route for CART
-      
-          //           Add the Route for SHIPPING
-        
         <Route path="/login" element={<Login />} />
         <Route path="/me" element={<Profile />} />
-         //           Add the Route for MY ORDERS
-
+        {/* <Route path="/cart" element={<Cart />} /> */}
+        {/* <Route path="/shipping" element={<Shipping />} /> */}
+        {/* <Route path="/myOrders" element={<MyOrders />} /> */}
         <Route path="/order/:id" element={<OrderDetails />} />
-      
-       
-
-        
       </Routes>
-
       <Footer />
     </Router>
   );
-}
+};
 
-export default App;
