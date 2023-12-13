@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <div className="home">
         <div>
-          <h1>Burguer Shop</h1>
+          <h1>Burger Shop</h1>
           <p>Las burgers más sabrosas del barrio</p>
         </div>
         <a
