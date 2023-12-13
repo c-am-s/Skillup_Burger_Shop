@@ -5,9 +5,10 @@ import { VscGithub } from "react-icons/vsc";
 import "../../styles/footer.scss";
 
 export default function Footer(){
+  
   return (
-    <div className="container footer row">
-      <div className="col-12 col-md-9">
+    <footer>
+      <div>
         <h2>The Joint</h2>
         <p>
           Las hamburguesas más jugosas preparadas con todo el cariño de La Gang
@@ -25,7 +26,7 @@ export default function Footer(){
           <VscGithub />
         </a>
       </aside>
-    </div>
+    </footer>
   );
 };
 

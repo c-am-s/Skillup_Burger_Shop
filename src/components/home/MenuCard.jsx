@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Popup from "reactjs-popup";
 
-
 export default function MenuCard({
   itemNum,
   burgerSrc,
@@ -30,7 +29,7 @@ export default function MenuCard({
       <main>
         <img src={burgerSrc} alt={itemNum} />
 
-        <h5>₹{price}</h5>
+        <h5>{price}€</h5>
 
         <p>{title}</p>
         <Popup

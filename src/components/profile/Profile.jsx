@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 import me from "../../assets/skj.jpg";
 import { Link } from "react-router-dom";
 import { MdDashboard } from "react-icons/md";
-
-const Profile = () => {
+export default function Profile() {
   const options = {
     initial: {
       y: "-100%",
@@ -22,7 +21,7 @@ const Profile = () => {
         <motion.h5 {...options} transition={{ delay: 0.3 }}>
           Nelson
         </motion.h5>
-      
+
         <motion.div
           initial={{
             x: "-100vw",
@@ -54,6 +53,4 @@ const Profile = () => {
       </main>
     </section>
   );
-};
-
-export default Profile;
+}
