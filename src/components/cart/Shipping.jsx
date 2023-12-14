@@ -55,7 +55,14 @@ export default function Shipping() {
             <input type="number" placeholder="+00 - 00000000 📞" />
           </div>
           <Popup
-            trigger={<button className="btn btn-dark rounded-pill w-50 mt-4" type="button">Confirmar pedido</button>}
+            trigger={
+              <button
+                className="btn btn-dark rounded-pill w-50 mt-4"
+                type="button"
+              >
+                Confirmar pedido
+              </button>
+            }
             position="right center"
           >
             <div

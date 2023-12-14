@@ -81,11 +81,11 @@ export default function Cart() {
             <p>{subTotal}€</p>
           </div>
           <div>
-            <h4>Tax</h4>
+            <h4>IVA</h4>
             <p>{taxes}€</p>
           </div>
           <div>
-            <h4>Shipping Charges</h4>
+            <h4>Gastos de envío</h4>
             <p>{1.5}€</p>
           </div>
           <div>

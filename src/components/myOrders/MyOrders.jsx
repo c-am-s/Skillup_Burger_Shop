@@ -1,9 +1,9 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import { AiOutlineEye } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import { AiOutlineEye } from "react-icons/ai";
 
-export default function MyOrders () {
-  // const arr = [1, 2, 3, 4];
+export default function MyOrders() {
+  const arr = [1, 2, 3, 4];
 
   return (
     <section className="tableClass">
@@ -21,13 +21,23 @@ export default function MyOrders () {
           </thead>
 
           <tbody>
-{/* //     Add the code for the table body */}
-           
+            {arr.map((i) => (
+              <tr key={i}>
+                <td>#ON????????</td>
+                <td>En curso</td>
+                <td>3</td>
+                <td>€{16.0}</td>
+                <td>Online</td>
+                <td>
+                  <Link to={`/order/${"ON00012345"}`}>
+                    <AiOutlineEye />
+                  </Link>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </main>
     </section>
   );
-};
-
-
+}
