@@ -1,38 +1,61 @@
 import React from "react";
-// import { Country, State } from "country-state-city";
+import { Country, State } from "country-state-city";
 import Popup from "reactjs-popup";
 
 export default function Shipping() {
   return (
     <section className="shipping">
       <main>
-        <h1>Shipping Details</h1>
+        <h1>Detalles de envío</h1>
         <form>
           <div>
-            <label>H.No.</label>
-            <input type="text" placeholder="Enter House No." />
+            <label>Dirección</label>
+            <input
+              type="text"
+              placeholder="A dónde quieres recibir este pedido lleno de placer🤤?"
+            />
           </div>
           <div>
-            <label>City</label>
-            <input type="text" placeholder="Enter City" />
+            <label>Ciudad</label>
+            <input type="text" placeholder="Ciudad" />
           </div>
           <div>
-            {/* Compelte the code for the COUNTRY DROPDOWN*/}
-            <label>Country</label>
+            <label>País</label>
 
             <select>
-              <option value="">Country</option>
-              {/* // Enter the code here for country dropdown            */}
+              <option value="">Selecciona un país</option>
+              {Country &&
+                Country.getAllCountries().map((i) => (
+                  <option value="{i.isoCode}" key="{i.isoCode}">
+                    {i.name}
+                  </option>
+                ))}
             </select>
           </div>
-          <div>{/* Add the code for the STATE DROPDOWN*/}</div>
           <div>
-            <label>Pin Code</label>
-            <input type="number" placeholder="Enter Pincode" />
+            <label>Provincia</label>
+            <select>
+              <option value="">Selecciona una provincia</option>
+              {State &&
+                State.getStatesOfCountry("ES").map((i) => (
+                  <option value="{i.isoCode}" key="{i.isoCode}">
+                    {i.name}
+                  </option>
+                ))}
+            </select>
           </div>
-          {/* // Enter thr code for contact */}
+
+          <div>
+            <label>Código postal</label>
+            <input type="number" placeholder="Añade tu codigo postal 🏘️" />
+          </div>
+
+          <div>
+            <label>Teléfono </label>
+            <input type="number" placeholder="+00 - 00000000 📞" />
+          </div>
           <Popup
-            trigger={<button type="button">Confirm Order</button>}
+            trigger={<button className="btn btn-dark rounded-pill w-50 mt-4" type="button">Confirmar pedido</button>}
             position="right center"
           >
             <div
