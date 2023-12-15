@@ -9,9 +9,9 @@ export default function Footer(){
   return (
     <footer>
       <div>
-        <h2>The Joint</h2>
+        <h2>Burger Shop</h2>
         <p>
-          Las hamburguesas más jugosas preparadas con todo el cariño de La Gang
+          Las hamburguesas más jugosas preparadas con todo el cariño del equipo. 
         </p>
       </div>
       <aside>
