@@ -2,7 +2,7 @@ import { FaFacebookF, FaTwitter, FaGoogle, FaGithub } from "react-icons/fa";
 
 export default function SingupForm() {
   return (
-    <section>
+    <section className="w-60">
       <article className="text-center">
         <h5> Registrate con:</h5>
         <div className="container ">
@@ -21,21 +21,25 @@ export default function SingupForm() {
         </div>
       </article>
       <article>
-        <h5 className="text-center my-3">o con tu correo electrónico: </h5>
+        <h5 className="text-center my-3 ">o con tu correo electrónico: </h5>
         <form>
-          <div class="mb-3">
+          <div className="mb-3">
             <input
               type="text"
               className="form-control"
               id="firstName"
               placeholder="Nombre"
             />
+          </div>
+          <div className="mb-3">
             <input
               type="text"
               className="form-control"
               id="lastName"
               placeholder="Apellidos"
             />
+          </div>
+          <div class="mb-3">
             <input
               type="email"
               class="form-control"

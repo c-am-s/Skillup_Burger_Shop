@@ -15,7 +15,7 @@ export default function Header() {
         <div>
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/about">About</Link>
+          <Link to="/about">Sobre Nosotros</Link>
           <Link to="/cart">
             <GiShoppingCart />
           </Link>
